@@ -1,32 +1,61 @@
-/* Custom styles if needed */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f8f9fa; /* Light grey background */
+  background-color: #f8f9fa; 
   padding-top: 20px;
 }
 
-.container {
-  max-width: 768px; /* Explicitly set the container width to match the expected size */
+.custom-container {
+  width: 768px !important;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.custom-full-width {
+  width: 100% !important;
+  margin: 0;
+}
+
+.custom-half-width {
+  width: 50% !important;
+  margin: 0;
+}
+
+.custom-quarter-width {
+  width: 25% !important;
+  margin: 0;
 }
 
 .font-weight-bold {
-  font-weight: 700 !important; /* Ensure boldness */
+  font-weight: 700 !important;
 }
 
 .row div {
   border: 1px solid black;
   padding: 10px;
-  height: 100px; /* Adjust height for visual consistency */
+  height: 100px;
 }
 
-/* Custom styles for ensuring exact widths */
-.col-6 {
-  width: calc(100% / 2) !important; /* Ensure 50% width for main */
+.custom-success {
+  background-color: #28a745;
+  color: black;
 }
 
-.col-3 {
-  width: calc(100% / 4) !important; /* Ensure 25% width for sidebar and empty column */
+.custom-info {
+  background-color: #17a2b8;
+  color: black;
 }
 
-.col-12 {
-  width: 100% !important; /* Ensure 100% width for header and footer */
+.custom-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.custom-danger {
+  background-color: #dc3545;
+  color: black;
 }
